@@ -1,0 +1,198 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #485a65;
+    overflow-y: hidden;
+}
+
+.sidenav a {
+    padding: 0px 8px 0px 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #dcdcdc;
+    display: block;
+}
+.sidenav h2 {
+    padding: 25px 0px 25px 0px;
+    background-color: #5b8fb9;
+    font-size: 25px;
+    color: #dcdcdc;
+
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    background-color: #f1f1f1;
+    margin-left: 240px; /* Same as the width of the sidenav */
+}
+.headspace {
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.info {
+    padding: 20px 0px 20px 0px;
+    font-size: 14px;
+}
+.bar-option li a {
+    font-size: 12px;
+    background-color: #33b5b9;
+    display: block;
+    color: #98fffe;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.bar-option li {
+    font-size: 13px;
+    float: left;
+}
+
+.bar-option ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.bar-option li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/* Add padding to containers */
+.container {
+    font-size: 14px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    /*display: inline-block;*/
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 15px;
+}
+.btnStyle{
+    background-color: #33b5b9;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btnStyle:hover {
+    opacity: 1;
+}
+* {
+    box-sizing: border-box;
+}
+.column {
+    padding: 0px 15px 0px 15px;
+    float: left;
+
+}
+.column h3 {
+    /*font-size: 12px;*/
+    padding: 15px 0px 15px 0px;
+    background-color: #33b5b9;
+    display: block;
+    color: #98fffe;
+    text-align: center;
+    text-decoration: none;
+}
+.tableBorder {
+    width: 100%;
+    border: 2px solid #33b5b9;
+    background-color: #33b5b9;
+    /*border-collapse: collapse;*/
+}
+
+table {
+     width: 100%;
+     background-color: white;
+     padding-left: 10px;
+     table-layout: fixed ;
+ }
+
+.ala {
+    all: unset;
+}
+th, td {
+    font-size: 13px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+td form {
+
+    border-radius: 5px;
+    color: white;
+    font-size: 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: left;
+}
+.button {
+    color: white;
+    background-color: #33b5b9;
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    width: 90%;
+    border: none;
+    opacity: 0.7;
+}
+.button:hover {
+    opacity: 1;
+}
+
+.css-serial {
+    counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+}
+.rowList:hover {
+    background-color: #33b5b9;
+    border-color: #33b5b9;
+    border-radius: 5px;
+    color: white;
+}
